@@ -35,7 +35,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Properties(target = "org.bytedeco.javacpp.onnx", value = @Platform(
-    value = "linux-x86_64",
+    value = {"linux-x86_64", "macosx"},
     define = {"ONNX_NAMESPACE onnx", "ONNX_USE_LITE_PROTO", "ONNX_ML 1"},
     compiler = "cpp11",
     include = {
